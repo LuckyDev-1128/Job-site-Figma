@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Post a Job</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="images/svgs/logo.svg" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header
+      id="header"
+      class="header fixed-top d-flex align-items-center justify-content-between"
+    >
+      <div class="d-flex">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="images/svgs/logo.svg" alt="logo" />
+          <span class="d-none d-lg-block">The SharePage</span>
+        </a>
+        <i class="ms-3 bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <!-- End Logo -->
+      <!-- Search bar -->
+      <div class="d-flex position-relative">
+        <select
+          class="form-select rounded-start-pill form-select-sm"
+          aria-label="Default select example"
+          style="width: 188px"
+        >
+          <option selected>Events</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <input
+          type="text"
+          class="form-control form-control-sm rounded-end-pill"
+          name="query"
+          placeholder="Search"
+          title="Enter search keyword"
+        />
+        <button
+          type="submit"
+          class="btn btn-secondary btn-sm rounded-pill position-absolute"
+          title="Search"
+          style="right: 0"
+        >
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+      <nav class="header-nav">
+        <ul class="d-flex align-items-center">
+          <!-- <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li> -->
+          <!-- End Search Icon-->
+          <li class="nav-item">
+            <img src="images/svgs/nav/hand.svg" alt="hand" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/message.svg" alt="message" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/faq.svg" alt="faq" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/bell.svg" alt="bell" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/cart.svg" alt="cart" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/gear.svg" alt="gear" />
+          </li>
+
+          <li class="nav-item dropdown px-3 border-start">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="images/svgs/admin.svg"
+                alt="Profile"
+                class="rounded-circle"
+              />
+              <div>
+                <span class="d-none d-md-block dropdown-toggle ps-2"
+                  >Amelia Joseph</span
+                >
+              </div> </a
+            ><!-- End Profile Iamge Icon -->
+          </li>
+          <!-- End Profile Nav -->
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside
+      id="sidebar"
+      class="sidebar border rounded-4 shadow-none"
+      style="background-color: #fafafc"
+    >
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="07.html">
+            <img
+              src="assets/svgs/sidebar/dashboard.svg"
+              alt="dashboard"
+              class="me-4"
+            />
+            <span>Dashboard</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary active" href="08.html">
+            <img src="assets/svgs/sidebar/post.svg" alt="post" class="me-4" />
+            <span>Post a Job</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="10.html">
+            <img
+              src="assets/svgs/sidebar/active.svg"
+              alt="active"
+              class="me-4"
+            />
+            <span>Active Jobs</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="12.html">
+            <img src="assets/svgs/sidebar/draft.svg" alt="draft" class="me-4" />
+            <span>Draft Jobs</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="13.html">
+            <img src="assets/svgs/sidebar/save.svg" alt="save" class="me-4" />
+            <span>Save Jobs</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="14.html">
+            <img src="assets/svgs/sidebar/flag.svg" alt="flag" class="me-4" />
+            <span>Flagged Jobs</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="15.html">
+            <img
+              src="assets/svgs/sidebar/forward.svg"
+              alt="forward"
+              class="me-4"
+            />
+            <span>Fowarded Jobs</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="16.html">
+            <img
+              src="assets/svgs/sidebar/recommand.svg"
+              alt="recommand"
+              class="me-4"
+            />
+            <span>Recommended Jobs</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="17.html">
+            <img
+              src="assets/svgs/sidebar/browse.svg"
+              alt="browse"
+              class="me-4"
+            />
+            <span>Browse Resume</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="18.html">
+            <img
+              src="assets/svgs/sidebar/save_resume.svg"
+              alt="save_resume"
+              class="me-4"
+            />
+            <span>Saved Resume</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="19.html">
+            <img
+              src="assets/svgs/sidebar/favourite.svg"
+              alt="favourite"
+              class="me-4"
+            />
+            <span>Favourite Resume</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="20.html">
+            <img
+              src="assets/svgs/sidebar/company.svg"
+              alt="company"
+              class="me-4"
+            />
+            <span>Company News</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="07.html">
+            <img src="assets/svgs/sidebar/back.svg" alt="back" class="me-4" />
+            <span>Return To Home</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <!-- End Sidebar-->
+
+    <main id="main" class="main">
+      <div class="pagetitle">
+        <h1>Post a Job</h1>
+      </div>
+      <!-- End Page Title -->
+
+      <section class="section dashboard">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="d-flex flex-column mb-3">
+              <div class="p-2">
+                <label
+                  for="validationDefault01"
+                  class="form-label fs-2 fw-semibold"
+                  >Job Title<span style="color: red">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Job Title"
+                />
+              </div>
+              <div class="p-2">
+                <div class="fs-2 fw-semibold mb-1">
+                  Descriptions<span style="color: red">*</span>
+                </div>
+
+                <!-- Quill Editor Default -->
+                <div class="quill-editor-default">
+                  <p>Type here...</p>
+                </div>
+                <!-- End Quill Editor Default -->
+              </div>
+              <div class="p-2">
+                <label class="form-label fs-2 fw-semibold"
+                  >Skills<span style="color: red"
+                    >*(Please Select at least 5)</span
+                  ></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search skills"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 mt-3">
+            <div class="row">
+              <div class="col-md-4">
+                <label class="form-label fs-2 fw-semibold"
+                  >Category<span style="color: red">*</span></label
+                >
+                <select id="inputState" class="form-select">
+                  <option selected>Select Job Category</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label fs-2 fw-semibold"
+                  >Job Location<span style="color: red">*</span></label
+                >
+                <select id="inputState" class="form-select">
+                  <option selected>Select Job Location</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label fs-2 fw-semibold"
+                  >Job Type<span style="color: red">*</span></label
+                >
+                <select id="inputState" class="form-select">
+                  <option selected>Select Job Type</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12 mt-3">
+            <div class="row">
+              <div class="col-md-4">
+                <label class="form-label fs-2 fw-semibold"
+                  >Salary Type<span style="color: red">*</span></label
+                >
+                <select id="inputState" class="form-select">
+                  <option selected>Select Salary Type</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label fs-2 fw-semibold"
+                  >Currency<span style="color: red">*</span></label
+                >
+                <select id="inputState" class="form-select">
+                  <option selected>Select Currency</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label fs-2 fw-semibold"
+                  >No. Of Position<span style="color: red">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="No. Of Position"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12 mt-3">
+            <div class="row">
+              <div class="col-md-4">
+                <label class="form-label fs-2 fw-semibold">Country</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Select Country</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label fs-2 fw-semibold">State</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Select State</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label class="form-label fs-2 fw-semibold">City</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Select City</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12 mt-3">
+              <div class="row">
+                <div class="col-md-4 mt-1">
+                  <div class="form-label fs-2 fw-semibold">
+                    Salary Range<span style="color: red">*</span>
+                  </div>
+                  <div class="d-flex align-items-center gap-3">
+                    <input
+                      type="text"
+                      class="form-control w-100"
+                      required
+                    />
+                    <span>-</span>
+                    <input
+                      type="text"
+                      class="form-control w-100"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label fs-2 fw-semibold"
+                    >Minimum Experience(Years)<span style="color: red"
+                      >*</span
+                    ></label
+                  >
+                  <select id="inputState" class="form-select">
+                    <option selected>Select Experience Year</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label fs-2 fw-semibold"
+                    >Closing Dates</label
+                  >
+                  <input type="date" class="form-control" />
+                </div>
+              </div>
+          </div>
+
+          <div class="col-lg-6 mt-3">
+            <div class="row">
+                <div class="fs-6 fw-semibold">Questions for mandatory Answers</div>
+                <div class="col-md-8 mt-3">
+                    <div class="fs-2 fw-semibold">i) Are you legally eligible to work in <country>?</div>
+                </div>
+                <div class="col-md-4 d-flex flex-row gap-2 mt-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="yes" value="option1">
+                        <label class="form-check-label" for="yes">
+                          Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="no" id="gridRadios1" value="option1" checked>
+                        <label class="form-check-label" for="no">
+                          No
+                        </label>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 mt-3">
+                    <div class="fs-2 fw-semibold">ii) Do you need to relocate for this work?</div>
+                </div>
+                <div class="col-md-4 d-flex flex-row gap-2 mt-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="yes2" value="option1">
+                        <label class="form-check-label" for="yes2">
+                          Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="no2"value="option1" checked>
+                        <label class="form-check-label" for="no2">
+                          No
+                        </label>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 mt-3">
+                    <div class="fs-2 fw-semibold">iii) Desire salary?</div>
+                </div>
+                <div class="col-md-4 d-flex flex-row gap-2 mt-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="yes3" value="option1">
+                        <label class="form-check-label" for="yes3">
+                          Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="no3" value="option1" checked>
+                        <label class="form-check-label" for="no3">
+                          No
+                        </label>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 mt-3">
+                    <div class="fs-2 fw-semibold">iv) Start Work date?</div>
+                </div>
+                <div class="col-md-4 d-flex flex-row gap-2 mt-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="yes4" value="option1">
+                        <label class="form-check-label" for="yes4">
+                          Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="no4" value="option1" checked>
+                        <label class="form-check-label" for="no4">
+                          No
+                        </label>
+                      </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-5">
+            <button class="btn btn-primary me-4" style="border-radius: 20px; width: 248px;" disabled>SAVE AS DRAFT</button>
+            <button class="btn btn-primary" style="border-radius: 20px; width: 248px;">PREVIEW</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/quill/quill.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

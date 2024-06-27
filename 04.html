@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Apply</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="images/svgs/logo.svg" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header
+      id="header"
+      class="header fixed-top d-flex align-items-center justify-content-between"
+    >
+      <div class="d-flex">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="images/svgs/logo.svg" alt="logo" />
+          <span class="d-none d-lg-block">The SharePage</span>
+        </a>
+        <i class="ms-3 bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <!-- End Logo -->
+      <!-- Search bar -->
+      <div class="d-flex position-relative">
+        <select
+          class="form-select rounded-start-pill form-select-sm"
+          aria-label="Default select example"
+          style="width: 188px"
+        >
+          <option selected>Events</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <input
+          type="text"
+          class="form-control form-control-sm rounded-end-pill"
+          name="query"
+          placeholder="Search"
+          title="Enter search keyword"
+        />
+        <button
+          type="submit"
+          class="btn btn-secondary btn-sm rounded-pill position-absolute"
+          title="Search"
+          style="right: 0"
+        >
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+      <nav class="header-nav">
+        <ul class="d-flex align-items-center">
+          <!-- <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li> -->
+          <!-- End Search Icon-->
+          <li class="nav-item">
+            <img src="images/svgs/nav/hand.svg" alt="hand" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/message.svg" alt="message" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/faq.svg" alt="faq" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/bell.svg" alt="bell" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/cart.svg" alt="cart" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/gear.svg" alt="gear" />
+          </li>
+
+          <li class="nav-item dropdown px-3 border-start">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="images/svgs/admin.svg"
+                alt="Profile"
+                class="rounded-circle"
+              />
+              <div>
+                <span class="d-none d-md-block dropdown-toggle ps-2"
+                  >Amelia Joseph</span
+                >
+              </div> </a
+            ><!-- End Profile Iamge Icon -->
+          </li>
+          <!-- End Profile Nav -->
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+    <!-- upload Modal start -->
+    <div class="modal fade" id="upload" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-4">
+          <h5 class="modal-title pagetitle fs-6 m-3">Upload A Cover Letter</h5>
+          <div class="modal-body d-flex flex-column">
+            <div class="p-2">
+              <label
+                for="validationDefault01"
+                class="form-label fs-2 fw-semibold"
+                >Title<span style="color: red">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Title"
+              />
+            </div>
+            <div class="p-2">
+              <div class="fs-2 fw-semibold mb-1">
+                Cover Letter<span style="color: red">*</span>
+              </div>
+              <textarea class="form-control" style="height: 100px"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button
+              type="button"
+              class="btn btn-outline-primary rounded-5 fs-1"
+              style="width: 90px"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary rounded-5 fs-1"
+              style="width: 90px"
+            >
+              Save
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- upload Modal End -->
+    <main class="main-custom">
+      <div class="pagetitle d-flex justify-content-between">
+        <h1>Apply</h1>
+        <button class="btn btn-primary rounded-5 fs-3">
+          <i class="bi bi-arrow-left pe-2"></i>Back
+        </button>
+      </div>
+      <section class="section dashboard">
+        <div class="row mt-4">
+          <div class="col-sm-5 d-flex flex-column">
+            <button
+              class="btn btn-primary btn-block rounded-5 mb-3 w-75 align-self-center"
+              data-bs-toggle="modal"
+              data-bs-target="#upload"
+            >
+              <i class="bi bi-upload pe-2"></i> Upload Cover Letter
+            </button>
+            <div class="d-flex mb-3">
+              <span
+                class="flex-fill border-bottom me-2"
+                style="position: relative; top: -12px"
+              ></span>
+              <span>OR</span>
+              <span
+                class="flex-fill border-bottom ms-2"
+                style="position: relative; top: -12px"
+              ></span>
+            </div>
+
+            <select class="form-select fs-5 mb-3 rounded-5">
+              <option selected>Shoaib Resume</option>
+            </select>
+            <div
+              class="mt-4 position-relative"
+              style="background-color: #f9fafb"
+            >
+              <div
+                class="d-flex flex-column gap-3 border border-secondary rounded p-5"
+              >
+                <h4 class="text-secondary">Simple Cover</h4>
+                <div class="fs-5 text-light">
+                  We are seeking a talented and experienced Full-Stack Developer
+                  to join our dynamic team. As a Full-Stack Developer, you will
+                  be responsible for developing and maintaining both front-end
+                  and back-end components of our web applications. You will work
+                  closely with our team of designers and developers to create
+                  innovative solutions that meet our clients' needs. The ideal
+                  candidate is passionate about technology, possesses strong
+                  probleWe are seeking a talented and experienced Full-Stack
+                  Developer to join our dynamic team. As a Full-Stack Developer,
+                  you will be responsible for developing and maintaining both
+                  front-end and back-end components of our web applications. You
+                  will work closely with our team of designers and developers to
+                  create innovative solutions that meet our clients' needs. The
+                  ideal candidate is passionate about technology, possesses
+                  strong problem-solving skills, and thrives in a collaborative
+                  environment. We are seeking a talented and experienced
+                  Full-Stack Developer to join our dynamic team. As a Full-Stack
+                  Developer, you will be responsible for developing and
+                  maintaining both front-end and back-end components of our web
+                  applications. You will work closely with our team of designers
+                  and developers to create innovative solutions that meet our
+                  clients' needs. The ideal candidate is passionate about
+                  technology, possesses strong problem-solving skills, and
+                  thrives in a collaborative environment.
+                </div>
+                <a
+                  class="btn btn-sm rounded-5 text-white position-absolute"
+                  style="top: 1rem; right: 2rem"
+                >
+                  <img src="assets/svgs/activejob/edit.svg" />
+                </a>
+              </div>
+            </div>
+
+            <div class="d-flex mb-3 mt-4">
+              <span
+                class="flex-fill border-bottom me-2"
+                style="position: relative; top: -12px"
+              ></span>
+              <span>OR</span>
+              <span
+                class="flex-fill border-bottom ms-2"
+                style="position: relative; top: -12px"
+              ></span>
+            </div>
+
+            <div class="d-flex flex-column">
+              <div class="p-2">
+                <label
+                  for="validationDefault01"
+                  class="form-label fs-2 fw-semibold"
+                  >Title</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Title"
+                />
+              </div>
+              <div class="p-2">
+                <div class="fs-2 fw-semibold mb-1">Cover Letter</div>
+                <textarea class="form-control" style="height: 100px"></textarea>
+              </div>
+            </div>
+            <div class="form-check form-switch my-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="flexSwitchCheckChecked"
+                checked
+              />
+              <label class="form-check-label" for="flexSwitchCheckChecked"
+                >Save This Cover Letter</label
+              >
+            </div>
+            <div class="d-flex justify-content-between mb-3">
+              <button class="btn btn-light rounded-5 mt-3 me-2" style="width: 250px">
+                Skip
+              </button>
+              <button
+                class="btn btn-primary rounded-5 mt-3"
+                style="width: 250px"
+              >
+                Continue
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <div class="row border border-secondary-subtitle p-4">
+              <div class="col-md-7 position-relative">
+                <div class="fs-7 fw-semibold">Desarrollador Full-Stack</div>
+                <div class="fs-3" style="color: #4d4d4d">
+                  Salary $400 - 500 USD
+                </div>
+                <img
+                  src="assets/svgs/bell.svg"
+                  alt="bell"
+                  class="position-absolute"
+                  style="top: 1rem; right: 1rem"
+                />
+                <div class="fs-6 fw-semibold mt-4">Skills Required</div>
+                <div class="d-flex flex-row mt-2">
+                  <button class="btn btn-info me-3">Html</button>
+                  <button class="btn btn-info me-3">Angular</button>
+                  <button class="btn btn-info me-3">Node Js</button>
+                </div>
+                <div class="fs-6 fw-semibold mt-3">Job Description</div>
+                <p class="fs-4 mb-3 mt-2 pe-5" style="color: #4d4d4d">
+                  We are seeking a talented and experienced Full-Stack Developer
+                  to join our dynamic team.<br />
+                  As a Full-Stack Developer, you will be responsible for
+                  developing and maintaining both front<br />-end and back-end
+                  components of our web applications. You will work closely with
+                  our team<br />
+                  of designers and developers to create innovative solutions
+                  that meet our clients' needs.<br />
+                  The ideal candidate is passionate about technology, possesses
+                  strong problem-solving skills,<br />and thrives in a
+                  collaborative environment.
+                </p>
+                <p class="fs-4 mb-3 pe-5" style="color: #4d4d4d">
+                  Develop and maintain web applications using modern
+                  technologies and frameworks. <br />
+                  Collaborate with designers and back-end developers to
+                  implement user-friendly interfaces and functionalities.
+                  <br />Write clean, efficient, and well-documented code.
+                </p>
+                <p class="fs-4 mb-3 pe-5" style="color: #4d4d4d">
+                  Conduct code reviews and provide constructive feedback to team
+                  members. <br />Stay up-to-date with emerging technologies and
+                  industry trends. <br />Troubleshoot and debug issues to ensure
+                  optimal performance and reliability of applications.
+                  <br />Participate in project planning and estimation
+                  processes.
+                </p>
+              </div>
+              <div class="col-md-5">
+                <div class="job-part-card">
+                  <div class="d-flex flex-row mt-3 ms-4 mb-3">
+                    <img src="assets/svgs/postjob/category.svg"/>
+                    <span class="fs-3 fw-light ms-2">Category : Accounting</span>
+                  </div>
+                  <div class="d-flex flex-row ms-4 mb-3">
+                    <img src="assets/svgs/postjob/level.svg"  />
+                    <span class="fs-3 fw-light ms-2"
+                      >Level : <button>Fulltime</button></span
+                    >
+                  </div>
+                  <div class="d-flex flex-row ms-4 mb-3">
+                    <img src="assets/svgs/postjob/map.svg" />
+                    <span class="fs-3 fw-light ms-2">Type : Hybrid</span>
+                  </div>
+                  <div class="d-flex flex-row ms-4 mb-3">
+                    <img src="assets/svgs/postjob/salary.svg" />
+                    <span class="fs-3 fw-light ms-2">Salary Type : Monthly</span>
+                  </div>
+                  <div class="d-flex flex-row ms-4 mb-3">
+                    <img src="assets/svgs/postjob/noofpos.svg"  />
+                    <span class="fs-3 fw-light ms-2">No of Position : 12</span>
+                  </div>
+                  <div class="d-flex flex-row ms-4 mb-3">
+                    <img src="assets/svgs/postjob/location.svg"/>
+                    <span class="fs-3 fw-light ms-2">Location : Dawson Creek</span>
+                  </div>
+                  <div class="d-flex flex-row ms-4 mb-3">
+                    <img src="assets/svgs/postjob/global.svg" />
+                    <span class="fs-3 fw-light ms-2">State: Pakistan</span>
+                  </div>
+                  <div class="d-flex flex-row ms-4 mb-3">
+                    <img src="assets/svgs/postjob/global.svg" />
+                    <span class="fs-3 fw-light ms-2">Country : Pakistan</span>
+                  </div>
+                </div>
+                <div class="job-part-card">
+                  <div class="fs-1 fw-semibold mt-3 ms-4 mb-3">Actions</div>
+                  <div href="#" class="fs-1 fw-light mt-3 ms-4 mb-3 text-black">
+                    <u>Save</u>
+                  </div>
+                  <div href="#" class="fs-1 fw-light ms-4 mb-3 text-black">
+                    <u>Forward</u>
+                  </div>
+                  <div href="#" class="fs-1 fw-light ms-4 mb-3 text-black">
+                    <u>Print</u>
+                  </div>
+                  <div href="#" class="fs-1 fw-light ms-4 mb-3 text-black">
+                    <u>View Company Detail</u>
+                  </div>
+                  <div href="#" class="fs-1 fw-light ms-4 mb-3 text-black">
+                    <u>View All Jobs</u>
+                  </div>
+                  <div href="#" class="fs-1 fw-light ms-4 mb-3 text-black">
+                    <u>Flag This Job</u>
+                  </div>
+                  <div href="#" class="fs-1 fw-light ms-4 mb-3 text-black">
+                    <u>Add To Favourite</u>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 col-sm-6 col-lg-3">
+                      <a href="#">
+                        <i class="fab fa-facebook fa-2x text-primary mx-2"></i>                    
+                      </a>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-6">
+                      <a href="#">
+                        <i class="fab fa-instagram fa-2x text-primary mx-2"></i>                    
+                      </a>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-6">
+                      <a href="#">
+                        <i class="fab fa-twitter fa-2x text-primary mx-2"></i>                    
+                      </a>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-sm-6">
+                      <a href="#">
+                        <i class="fa fa-phone-square fa-2x text-primary mx-2"></i>                    
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

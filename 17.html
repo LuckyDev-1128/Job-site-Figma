@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Browse Resume</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="images/svgs/logo.svg" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header
+      id="header"
+      class="header fixed-top d-flex align-items-center justify-content-between"
+    >
+      <div class="d-flex">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="images/svgs/logo.svg" alt="logo" />
+          <span class="d-none d-lg-block">The SharePage</span>
+        </a>
+        <i class="ms-3 bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <!-- End Logo -->
+      <!-- Search bar -->
+      <div class="d-flex position-relative">
+        <select
+          class="form-select rounded-start-pill form-select-sm"
+          aria-label="Default select example"
+          style="width: 188px"
+        >
+          <option selected>Events</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <input
+          type="text"
+          class="form-control form-control-sm rounded-end-pill"
+          name="query"
+          placeholder="Search"
+          title="Enter search keyword"
+        />
+        <button
+          type="submit"
+          class="btn btn-secondary btn-sm rounded-pill position-absolute"
+          title="Search"
+          style="right: 0"
+        >
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+      <nav class="header-nav">
+        <ul class="d-flex align-items-center">
+          <!-- <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li> -->
+          <!-- End Search Icon-->
+          <li class="nav-item">
+            <img src="images/svgs/nav/hand.svg" alt="hand" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/message.svg" alt="message" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/faq.svg" alt="faq" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/bell.svg" alt="bell" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/cart.svg" alt="cart" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/gear.svg" alt="gear" />
+          </li>
+
+          <li class="nav-item dropdown px-3 border-start">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="images/svgs/admin.svg"
+                alt="Profile"
+                class="rounded-circle"
+              />
+              <div>
+                <span class="d-none d-md-block dropdown-toggle ps-2"
+                  >Amelia Joseph</span
+                >
+              </div> </a
+            ><!-- End Profile Iamge Icon -->
+          </li>
+          <!-- End Profile Nav -->
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside
+      id="sidebar"
+      class="sidebar border rounded-4 shadow-none"
+      style="background-color: #fafafc"
+    >
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="07.html">
+            <img
+              src="assets/svgs/sidebar/dashboard.svg"
+              alt="dashboard"
+              class="me-4"
+            />
+            <span>Dashboard</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="08.html">
+            <img src="assets/svgs/sidebar/post.svg" alt="post" class="me-4" />
+            <span>Post a Job</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="10.html">
+            <img
+              src="assets/svgs/sidebar/active.svg"
+              alt="active"
+              class="me-4"
+            />
+            <span>Active Jobs</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="12.html">
+            <img src="assets/svgs/sidebar/draft.svg" alt="draft" class="me-4" />
+            <span>Draft Jobs</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="13.html">
+            <img src="assets/svgs/sidebar/save.svg" alt="save" class="me-4" />
+            <span>Save Jobs</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="14.html">
+            <img src="assets/svgs/sidebar/flag.svg" alt="flag" class="me-4" />
+            <span>Flagged Jobs</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="15.html">
+            <img
+              src="assets/svgs/sidebar/forward.svg"
+              alt="forward"
+              class="me-4"
+            />
+            <span>Fowarded Jobs</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="16.html">
+            <img
+              src="assets/svgs/sidebar/recommand.svg"
+              alt="recommand"
+              class="me-4"
+            />
+            <span>Recommended Jobs</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary active" href="17.html">
+            <img
+              src="assets/svgs/sidebar/browse.svg"
+              alt="browse"
+              class="me-4"
+            />
+            <span>Browse Resume</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="18.html">
+            <img
+              src="assets/svgs/sidebar/save_resume.svg"
+              alt="save_resume"
+              class="me-4"
+            />
+            <span>Saved Resume</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="19.html">
+            <img
+              src="assets/svgs/sidebar/favourite.svg"
+              alt="favourite"
+              class="me-4"
+            />
+            <span>Favourite Resume</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="20.html">
+            <img
+              src="assets/svgs/sidebar/company.svg"
+              alt="company"
+              class="me-4"
+            />
+            <span>Company News</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="07.html">
+            <img src="assets/svgs/sidebar/back.svg" alt="back" class="me-4" />
+            <span>Return To Home</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <!-- End Sidebar-->
+
+    <main id="main" class="main">
+      <div class="pagetitle">
+        <h1>Browse Resume</h1>
+      </div>
+      <!-- End Page Title -->
+
+      <section class="section dashboard">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="input-group input-group-lg mt-4 mb-3">
+              <input
+                type="text"
+                class="form-control fs-1"
+                placeholder="Search Job By Keyword"
+                aria-label="search"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text bg-secondary" id="basic-addon2"
+                ><i class="bi bi-search text-white"></i
+              ></span>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <section class="d-flex flex-column">
+              <label class="fs-2 fw-semibold"
+                >Categories<span class="text-danger">*</span></label
+              >
+              <div class="d-flex align-items-center">
+                <select
+                  class="form-select me-5"
+                  style="margin-top: 5px; width: 340px"
+                >
+                  <option selected>Select Category</option>
+                </select>
+                <div>
+                  <a href="#" class="text-primary fs-3"
+                    ><u>Change Location</u></a
+                  >
+                  <div class="fs-3">Rawalpindi, Punjab, Pakistan</div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div
+            class="row"
+            style="margin-top: 80px"
+          >
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="card position-relative bg-info custom-card">
+              <img
+                src="assets/svgs/browse_resume/profile.svg"
+                alt="profile"
+                class="profile position-absolute top-0 start-50 translate-middle"
+              />
+              <img
+                src="assets/svgs/browse_resume/heart.svg"
+                alt="heart"
+                class="position-absolute"
+                style="top: 80px; right: 20px"
+              />
+              <div class="card-body">
+                <h4 class="fs-6 mt-4">Kyle Fisher</h4>
+                <p class="fs-3">Tag Line Any</p>
+                <span class="fs-1 d-flex mb-3 mt-3">
+                  <img
+                    src="assets/svgs/browse_resume/career.svg"
+                    alt="career"
+                    class="me-3"
+                  />
+                  <strong> Career Category:</strong> Teaching
+                </span>
+                <span class="fs-1 d-flex mb-3 mt-3">
+                  <img
+                    src="assets/svgs/browse_resume/dollar.svg"
+                    alt="dollar"
+                    class="me-3"
+                  />
+                  <strong> Hourly Rate (USD):</strong> 25
+                </span>
+                <span class="fs-1 d-flex mb-3 mt-3">
+                  <img
+                    src="assets/svgs/browse_resume/language.svg"
+                    alt="language"
+                    class="me-3"
+                  />
+                  <strong>Language Fluency:</strong> Hindi and English
+                </span>
+                <span class="fs-1 d-flex mb-3 mt-3">
+                  <img
+                    src="assets/svgs/browse_resume/calendar.svg"
+                    alt="calendar"
+                    class="me-3"
+                  />
+                  <strong>Available From:</strong> 15/5/2024
+                </span>
+                <a href="#" class="btn btn-primary btn-block rounded-5 w-100"
+                  >View Profile</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="card position-relative bg-info custom-card">
+              <img
+                src="assets/svgs/browse_resume/profile.svg"
+                alt="profile"
+                class="profile position-absolute top-0 start-50 translate-middle"
+              />
+              <img
+                src="assets/svgs/browse_resume/heart.svg"
+                alt="heart"
+                class="position-absolute"
+                style="top: 80px; right: 20px"
+              />
+              <div class="card-body">
+                <h4 class="fs-6 mt-4">Kyle Fisher</h4>
+                <p class="fs-3">Tag Line Any</p>
+                <span class="fs-1 d-flex mb-3 mt-3">
+                  <img
+                    src="assets/svgs/browse_resume/career.svg"
+                    alt="career"
+                    class="me-3"
+                  />
+                  <strong> Career Category:</strong> Teaching
+                </span>
+                <span class="fs-1 d-flex mb-3 mt-3">
+                  <img
+                    src="assets/svgs/browse_resume/dollar.svg"
+                    alt="dollar"
+                    class="me-3"
+                  />
+                  <strong> Hourly Rate (USD):</strong> 25
+                </span>
+                <span class="fs-1 d-flex mb-3 mt-3">
+                  <img
+                    src="assets/svgs/browse_resume/language.svg"
+                    alt="language"
+                    class="me-3"
+                  />
+                  <strong>Language Fluency:</strong> Hindi and English
+                </span>
+                <span class="fs-1 d-flex mb-3 mt-3">
+                  <img
+                    src="assets/svgs/browse_resume/calendar.svg"
+                    alt="calendar"
+                    class="me-3"
+                  />
+                  <strong>Available From:</strong> 15/5/2024
+                </span>
+                <a href="#" class="btn btn-primary btn-block rounded-5 w-100"
+                  >View Profile</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="card position-relative bg-info custom-card">
+              <img
+                src="assets/svgs/browse_resume/profile.svg"
+                alt="profile"
+                class="profile position-absolute top-0 start-50 translate-middle"
+              />
+              <img
+                src="assets/svgs/browse_resume/heart.svg"
+                alt="heart"
+                class="position-absolute"
+                style="top: 80px; right: 20px"
+              />
+              <div class="card-body">
+                <h4 class="fs-6 mt-4">Kyle Fisher</h4>
+                <p class="fs-3">Tag Line Any</p>
+                <span class="fs-1 d-flex mb-3 mt-3">
+                  <img
+                    src="assets/svgs/browse_resume/career.svg"
+                    alt="career"
+                    class="me-3"
+                  />
+                  <strong> Career Category:</strong> Teaching
+                </span>
+                <span class="fs-1 d-flex mb-3 mt-3">
+                  <img
+                    src="assets/svgs/browse_resume/dollar.svg"
+                    alt="dollar"
+                    class="me-3"
+                  />
+                  <strong> Hourly Rate (USD):</strong> 25
+                </span>
+                <span class="fs-1 d-flex mb-3 mt-3">
+                  <img
+                    src="assets/svgs/browse_resume/language.svg"
+                    alt="language"
+                    class="me-3"
+                  />
+                  <strong>Language Fluency:</strong> Hindi and English
+                </span>
+                <span class="fs-1 d-flex mb-3 mt-3">
+                  <img
+                    src="assets/svgs/browse_resume/calendar.svg"
+                    alt="calendar"
+                    class="me-3"
+                  />
+                  <strong>Available From:</strong> 15/5/2024
+                </span>
+                <a href="#" class="btn btn-primary btn-block rounded-5 w-100"
+                  >View Profile</a
+                >
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="col-md-12 mt-8">
+            <div class="d-flex flex-row justify-content-between">
+              <div class="row fs-5">
+                <label class="col-sm-3 col-form-label d-none d-md-block">Show</label>
+                <div class="col-sm-6">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>10</option>
+                  </select>
+                </div>
+                <div class="col-sm-3 col-form-label d-none d-md-block">Items</div>
+              </div>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end">
+                  <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

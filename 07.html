@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>SharePage</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="images/svgs/logo.svg" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header
+      id="header"
+      class="header fixed-top d-flex align-items-center justify-content-between"
+    >
+      <div class="d-flex">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="images/svgs/logo.svg" alt="logo" />
+          <span class="d-none d-lg-block">The SharePage</span>
+        </a>
+        <i class="ms-3 bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <!-- End Logo -->
+      <!-- Search bar -->
+      <div class="d-flex position-relative">
+        <select
+          class="form-select rounded-start-pill form-select-sm"
+          aria-label="Default select example"
+          style="width: 188px"
+        >
+          <option selected>Events</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <input
+          type="text"
+          class="form-control form-control-sm rounded-end-pill"
+          name="query"
+          placeholder="Search"
+          title="Enter search keyword"
+        />
+        <button
+          type="submit"
+          class="btn btn-secondary btn-sm rounded-pill position-absolute"
+          title="Search"
+          style="right: 0"
+        >
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+      <!-- <div class="input-group input-group-sm search-bar" style="width: 488px;">
+        <select class="form-select form-control" aria-label="Default select example">
+          <option selected>Events</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <input
+          type="text"
+          class="form-control"
+          name="query"
+          placeholder="Search"
+          title="Enter search keyword"
+        />
+        <button type="submit" class="btn btn-secondary" title="Search">
+          <i class="bi bi-search"></i>
+        </button>
+      </div> -->
+      <!-- End Search Bar -->
+
+      <nav class="header-nav">
+        <ul class="d-flex align-items-center">
+          <!-- <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li> -->
+          <!-- End Search Icon-->
+          <li class="nav-item">
+            <img src="images/svgs/nav/hand.svg" alt="hand" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/message.svg" alt="message" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/faq.svg" alt="faq" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/bell.svg" alt="bell" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/cart.svg" alt="cart" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/gear.svg" alt="gear" />
+          </li>
+
+          <li class="nav-item dropdown px-3 border-start">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="images/svgs/admin.svg"
+                alt="Profile"
+                class="rounded-circle"
+              />
+              <div>
+                <span class="d-none d-md-block dropdown-toggle ps-2"
+                  >Amelia Joseph</span
+                >
+              </div> </a
+            ><!-- End Profile Iamge Icon -->
+          </li>
+          <!-- End Profile Nav -->
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside
+      id="sidebar"
+      class="sidebar border rounded-4 shadow-none"
+      style="background-color: #fafafc"
+    >
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item ">
+          <a class="nav-link text-primary active" href="07.html">
+            <img
+              src="assets/svgs/sidebar/dashboard.svg"
+              alt="dashboard"
+              class="me-4"
+            />
+            <span>Dashboard</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="08.html">
+            <img src="assets/svgs/sidebar/post.svg" alt="post" class="me-4" />
+            <span>Post a Job</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="10.html">
+            <img
+              src="assets/svgs/sidebar/active.svg"
+              alt="active"
+              class="me-4"
+            />
+            <span>Active Jobs</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="12.html">
+            <img src="assets/svgs/sidebar/draft.svg" alt="draft" class="me-4" />
+            <span>Draft Jobs</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="13.html">
+            <img src="assets/svgs/sidebar/save.svg" alt="save" class="me-4" />
+            <span>Save Jobs</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="14.html">
+            <img src="assets/svgs/sidebar/flag.svg" alt="flag" class="me-4" />
+            <span>Flagged Jobs</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="15.html">
+            <img
+              src="assets/svgs/sidebar/forward.svg"
+              alt="forward"
+              class="me-4"
+            />
+            <span>Fowarded Jobs</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="16.html">
+            <img
+              src="assets/svgs/sidebar/recommand.svg"
+              alt="recommand"
+              class="me-4"
+            />
+            <span>Recommended Jobs</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="17.html">
+            <img
+              src="assets/svgs/sidebar/browse.svg"
+              alt="browse"
+              class="me-4"
+            />
+            <span>Browse Resume</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="18.html">
+            <img
+              src="assets/svgs/sidebar/save_resume.svg"
+              alt="save_resume"
+              class="me-4"
+            />
+            <span>Saved Resume</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="19.html">
+            <img
+              src="assets/svgs/sidebar/favourite.svg"
+              alt="favourite"
+              class="me-4"
+            />
+            <span>Favourite Resume</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="20.html">
+            <img
+              src="assets/svgs/sidebar/company.svg"
+              alt="company"
+              class="me-4"
+            />
+            <span>Company News</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="07.html">
+            <img src="assets/svgs/sidebar/back.svg" alt="back" class="me-4" />
+            <span>Return To Home</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <!-- End Sidebar-->
+
+    <main id="main" class="main">
+      <div class="pagetitle">
+        <h1>Dashboard</h1>
+      </div>
+      <!-- End Page Title -->
+
+      <section class="section dashboard">
+        <div class="row">
+          <div class="col-lg-8 col-md-8 col-sm-8">
+            <section class="d-flex flex-column gap-3">
+              <div class="fs-2 fw-semibold">Select Data Range</div>
+              <div class="d-flex align-items-center gap-3">
+                <input
+                  type="date"
+                  class="form-control form-control-md w-100"
+                  required
+                />
+                <span>-</span>
+                <input
+                  type="date"
+                  class="form-control form-control-md w-100"
+                  required
+                />
+              </div>
+            </section>
+          </div>
+          <section class="mt-3">
+            <div class="fs-6 fw-semibold" style="line-height: 30px">
+              Job Board
+            </div>
+            <div class="mt-5 d-flex gap-4 flex-wrap">
+              <div class="job-card">
+                <div class="job-card-title text-center text-secondary">10</div>
+                <div class="text-secondary">Active Jobs</div>
+              </div>
+              <div class="job-card">
+                <div class="job-card-title text-center text-secondary">08</div>
+                <div class="text-secondary">Draft Jobs</div>
+              </div>
+              <div class="job-card">
+                <div class="job-card-title text-center text-secondary">01</div>
+                <div class="text-secondary">Saved Jobs</div>
+              </div>
+              <div class="job-card">
+                <div class="job-card-title text-center text-secondary">09</div>
+                <div class="text-secondary">Resumes</div>
+              </div>
+              <div class="job-card">
+                <div class="job-card-title text-center text-secondary">09</div>
+                <div class="text-secondary">Favourites</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="mt-4">
+            <div class="fs-6 fw-semibold" style="line-height: 30px">
+              Job Board Graph
+            </div>
+             <!-- Bar Chart -->
+             <canvas id="barChart" style="max-height: 400px;"></canvas>
+             <script>
+               document.addEventListener("DOMContentLoaded", () => {
+                 new Chart(document.querySelector('#barChart'), {
+                   type: 'bar',
+                   data: {
+                     labels: ['Flagged Jobs', 'Active Jobs', 'Favourite', 'Draft Jobs'],
+                     datasets: [{
+                       label: 'Bar',
+                       data: [40, 50, 35, 30],
+                       backgroundColor: [
+                         '#62B2FD',
+                         '#9BDFC4',
+                         '#F99BAB',
+                         '#FFB44F',
+                       ],
+                     }]
+                   },
+                   options: {
+                     scales: {
+                       y: {
+                         beginAtZero: true
+                       }
+                     }
+                   }
+                 });
+               });
+             </script>
+             <!-- End Bar CHart -->
+
+          </section>
+
+          <div></div>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

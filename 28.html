@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Saved Jobs</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="images/svgs/logo.svg" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header
+      id="header"
+      class="header fixed-top d-flex align-items-center justify-content-between"
+    >
+      <div class="d-flex">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="images/svgs/logo.svg" alt="logo" />
+          <span class="d-none d-lg-block">The SharePage</span>
+        </a>
+        <i class="ms-3 bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <!-- End Logo -->
+      <!-- Search bar -->
+      <div class="d-flex position-relative">
+        <select
+          class="form-select rounded-start-pill form-select-sm"
+          aria-label="Default select example"
+          style="width: 188px"
+        >
+          <option selected>Events</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <input
+          type="text"
+          class="form-control form-control-sm rounded-end-pill"
+          name="query"
+          placeholder="Search"
+          title="Enter search keyword"
+        />
+        <button
+          type="submit"
+          class="btn btn-secondary btn-sm rounded-pill position-absolute"
+          title="Search"
+          style="right: 0"
+        >
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+      <nav class="header-nav">
+        <ul class="d-flex align-items-center">
+          <!-- <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li> -->
+          <!-- End Search Icon-->
+          <li class="nav-item">
+            <img src="images/svgs/nav/hand.svg" alt="hand" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/message.svg" alt="message" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/faq.svg" alt="faq" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/bell.svg" alt="bell" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/cart.svg" alt="cart" />
+          </li>
+          <li class="nav-item">
+            <img src="images/svgs/nav/gear.svg" alt="gear" />
+          </li>
+
+          <li class="nav-item dropdown px-3 border-start">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="images/svgs/admin.svg"
+                alt="Profile"
+                class="rounded-circle"
+              />
+              <div>
+                <span class="d-none d-md-block dropdown-toggle ps-2"
+                  >Amelia Joseph</span
+                >
+              </div> </a
+            ><!-- End Profile Iamge Icon -->
+          </li>
+          <!-- End Profile Nav -->
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+
+     <!-- ======= Sidebar ======= -->
+     <aside
+     id="sidebar"
+     class="sidebar border rounded-4 shadow-none"
+     style="background-color: #fafafc"
+   >
+     <ul class="sidebar-nav" id="sidebar-nav">
+       <li class="nav-item">
+         <a class="nav-link text-primary" href="25.html">
+           <img
+             src="assets/svgs/sidebar/dashboard.svg"
+             alt="dashboard"
+             class="me-4"
+           />
+           <span>Dashboard</span>
+         </a>
+       </li>
+
+       <li class="nav-item">
+         <a class="nav-link text-primary" href="26.html">
+           <img src="assets/svgs/sidebar/post.svg" alt="post" class="me-4" />
+           <span>Drft Application</span>
+         </a>
+       </li>
+
+       <li class="nav-item">
+         <a class="nav-link text-primary" href="27.html">
+           <img
+             src="assets/svgs/sidebar/active.svg"
+             alt="active"
+             class="me-4"
+           />
+           <span>Applied Jobs</span>
+         </a>
+       </li>
+
+       <li class="nav-item">
+         <a class="nav-link text-primary active" href="28.html">
+           <img src="assets/svgs/sidebar/save.svg" alt="save" class="me-4" />
+           <span>Saved Jobs</span>
+         </a>
+       </li>
+
+       <li class="nav-item">
+         <a class="nav-link text-primary" href="29.html">
+           <img
+             src="assets/svgs/sidebar/forward.svg"
+             alt="forward"
+             class="me-4"
+           />
+           <span>Fowarded Jobs</span>
+         </a>
+       </li>
+
+       <li class="nav-item">
+         <a class="nav-link text-primary" href="30.html">
+           <img
+             src="assets/svgs/sidebar/recommand.svg"
+             alt="recommand"
+             class="me-4"
+           />
+           <span>Recommended Jobs</span>
+         </a>
+       </li>
+
+       <li class="nav-item">
+         <a class="nav-link text-primary" href="31.html">
+           <img
+             src="assets/svgs/sidebar/browse.svg"
+             alt="browse"
+             class="me-4"
+           />
+           <span>My Resumes</span>
+         </a>
+       </li>
+
+       <li class="nav-item">
+           <a class="nav-link text-primary" href="32.html">
+             <img
+               src="assets/svgs/sidebar/mycover.svg"
+               alt="cover"
+               class="me-4"
+             />
+             <span>My Cover Letters</span>
+           </a>
+         </li>
+
+       <li class="nav-item">
+         <a class="nav-link text-primary" href="25.html">
+           <img src="assets/svgs/sidebar/back.svg" alt="back" class="me-4" />
+           <span>Return To Home</span>
+         </a>
+       </li>
+     </ul>
+   </aside>
+   <!-- End Sidebar-->
+
+    <main id="main" class="main">
+      <div class="pagetitle">
+        <h1>Saved Jobs</h1>
+      </div>
+      <!-- End Page Title -->
+
+      <section class="section dashboard">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="input-group input-group-lg">
+              <input
+                type="text"
+                class="form-control fs-1"
+                placeholder="Search Job By Keyword"
+                aria-label="search"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text bg-secondary" id="basic-addon2"
+                ><i class="bi bi-search text-white"></i
+              ></span>
+            </div>
+          </div>
+
+          <div
+            class="col-md-12 mt-4 position-relative"
+            style="background-color: #fafafc"
+          >
+            <div
+              class="d-flex flex-column p-4 gap-3 border border-secondary rounded"
+            >
+              <div class="d-flex fs-3 gap-5 me-5" >
+                <span>Salary $400 - 500 USD</span>
+                <span>Full Time</span>
+              </div>
+              <h4>Desarrollador Full-Stack</h4>
+              <div class="fs-5 pe-5 text-light me-5">
+                We are seeking a highly experienced and skilled Senior .NET
+                Developer with at least 7 years of experience to join our
+                dynamic team. The successful candidate will play a critical role
+                in developing and maintaining complex software solutions using
+                the .NET. You will work closely with our team of designers and
+                developers to create innovative solutions that meet our clients'
+                needs. The ideal candidate is passionate about technology,
+                possesses strong problem-solving skills, and thrives in a
+                collaborative environment.
+              </div>
+              <div class="d-flex gap-3 flex-wrap">
+                <p class="fs-3 text-secondary fw-semibold">
+                  Web Development
+                </p>
+                <p class="fs-3 text-secondary fw-semibold">Html</p>
+                <p class="fs-3 text-secondary fw-semibold">UI/UX</p>
+                <p class="fs-3 text-secondary fw-semibold">Database</p>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <img src="assets/svgs/postjob/location.svg" />
+                <p class="fs-3 text-light">Webinar</p>
+              </div>
+              <p class="fs-1">Date Saved : 2024-01-12</p>
+              <button
+                class="btn btn-primary text-white rounded-5"
+                style="width: 185px"
+              >
+                Apply Now
+              </button>
+            </div>
+            <a
+              class="btn btn-sm rounded-5 text-white dropdown-toggle activejob-dropdown position-absolute"
+              style="top: 0.5rem; right: 1rem"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="assets/svgs/activejob/applicant/dot.svg" />
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item fs-3" href="#">
+                  <img src="assets/svgs/activejob/view.svg" /> View Job
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img src="assets/svgs/activejob/delete.svg" /> Remove</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-md-12 mt-4 position-relative"
+            style="background-color: #fafafc"
+          >
+            <div
+              class="d-flex flex-column p-4 gap-3 border border-secondary rounded"
+            >
+              <div class="d-flex fs-3 gap-5 me-5">
+                <span>Salary $400 - 500 USD</span>
+                <span>Full Time</span>
+              </div>
+              <h4>Desarrollador Full-Stack</h4>
+              <div class="fs-5 pe-5 text-light me-5">
+                We are seeking a highly experienced and skilled Senior .NET
+                Developer with at least 7 years of experience to join our
+                dynamic team. The successful candidate will play a critical role
+                in developing and maintaining complex software solutions using
+                the .NET. You will work closely with our team of designers and
+                developers to create innovative solutions that meet our clients'
+                needs. The ideal candidate is passionate about technology,
+                possesses strong problem-solving skills, and thrives in a
+                collaborative environment.
+              </div>
+              <div class="d-flex gap-3 flex-wrap">
+                <p class="fs-3 text-secondary fw-semibold">
+                  Web Development
+                </p>
+                <p class="fs-3 text-secondary fw-semibold">Html</p>
+                <p class="fs-3 text-secondary fw-semibold">UI/UX</p>
+                <p class="fs-3 text-secondary fw-semibold">Database</p>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <img src="assets/svgs/postjob/location.svg" />
+                <p class="fs-3 text-light">Webinar</p>
+              </div>
+              <p class="fs-1">Date Saved : 2024-01-12</p>
+              <button
+                class="btn btn-primary text-white rounded-5"
+                style="width: 185px"
+              >
+                Apply Now
+              </button>
+            </div>
+            <a
+              class="btn btn-sm rounded-5 text-white dropdown-toggle activejob-dropdown position-absolute"
+              style="top: 0.5rem; right: 1rem"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="assets/svgs/activejob/applicant/dot.svg" />
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item fs-3" href="#">
+                  <img src="assets/svgs/activejob/view.svg" /> View Job
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  ><img src="assets/svgs/activejob/delete.svg" /> Remove</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-12 mt-5">
+            <div class="d-flex flex-row justify-content-between">
+              <div class="row fs-5">
+                <label class="col-sm-3 col-form-label d-none d-md-block">Show</label>
+                <div class="col-sm-6">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>10</option>
+                  </select>
+                </div>
+                <div class="col-sm-3 col-form-label d-none d-md-block">Items</div>
+              </div>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end">
+                  <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
