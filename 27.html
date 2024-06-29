@@ -145,7 +145,7 @@
        <li class="nav-item">
          <a class="nav-link text-primary" href="26.html">
            <img src="assets/svgs/sidebar/post.svg" alt="post" class="me-4" />
-           <span>Drft Application</span>
+           <span>Draft Application</span>
          </a>
        </li>
 
@@ -174,7 +174,7 @@
              alt="forward"
              class="me-4"
            />
-           <span>Fowarded Jobs</span>
+           <span>Forwarded Jobs</span>
          </a>
        </li>
 
@@ -196,7 +196,7 @@
              alt="browse"
              class="me-4"
            />
-           <span>My Resumes</span>
+           <span>Resumes</span>
          </a>
        </li>
 
@@ -207,7 +207,7 @@
                alt="cover"
                class="me-4"
              />
-             <span>My Cover Letters</span>
+             <span>Cover Letters</span>
            </a>
          </li>
 
@@ -229,39 +229,44 @@
 
       <section class="section dashboard">
         <div class="row">
-          <div class="col-lg-4">
-            <div class="input-group input-group-lg mt-4">
-              <input
-                type="text"
-                class="form-control fs-1"
-                placeholder="Search Job By Keyword"
-                aria-label="search"
-                aria-describedby="basic-addon2"
-              />
-              <span class="input-group-text bg-secondary" id="basic-addon2"
-                ><i class="bi bi-search text-white"></i
-              ></span>
-            </div>
-          </div>
-
-          <div class="col-lg-8">
-            <section class="d-flex flex-column gap-3">
-              <div class="fs-2 fw-semibold">Select Data Range</div>
-              <div class="d-flex align-items-center gap-3">
+          <div class="col-lg-4 col-md-4"></div>
+          <div class="fs-2 fw-semibold col-lg-4 col-md-4 ms-4">Select Data Range</div>
+        </div>        
+        <div class="row">
+          <section class="d-flex mt-4 mb-3">
+            <div class="col-lg-4 col-sm-12">
+              <div class="input-group">
                 <input
-                  type="date"
-                  class="form-control form-control-md w-100"
-                  required
+                  type="text"
+                  class="form-control fs-1"
+                  placeholder="Search Job By Keyword"
+                  aria-label="search"
+                  aria-describedby="basic-addon2"
                 />
-                <span>-</span>
-                <input
-                  type="date"
-                  class="form-control form-control-md w-100"
-                  required
-                />
+                <span class="input-group-text bg-secondary" id="basic-addon2"
+                  ><i class="bi bi-search text-white"></i
+                ></span>
               </div>
-            </section>
-          </div>
+            </div>
+            <div class="col-lg-8">
+              <section class="d-flex flex-column gap-3 ms-4" style="width: 520px">
+                
+                <div class="d-flex align-items-center gap-3">
+                  <input
+                    type="date"
+                    class="form-control form-control-md w-100"
+                    required
+                  />
+                  <span>-</span>
+                  <input
+                    type="date"
+                    class="form-control form-control-md w-100"
+                    required
+                  />
+                </div>
+              </section>
+            </div>
+          </section>
 
           <div class="col-md-12 mt-4">
             <table class="table">
